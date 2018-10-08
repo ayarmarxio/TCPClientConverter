@@ -50,7 +50,8 @@ namespace TCPClientConverterMA
                                 {
                                     Console.WriteLine("Please write your pounds value here and press enter");
                                     string clientValue = Console.ReadLine();
-                                    _sWriter.WriteLine(clientValue);
+                                    string stringConcat = String.Concat("o=", clientValue);
+                                    _sWriter.WriteLine(stringConcat);
                                 }
                                 else
                                 {
